@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minakshi Kumari - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: rgb(27, 187, 48);
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(23, 202, 32);
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .intro, .projects, .about {
+            background-color: #00baf2;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+        }
+        .project-item {
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #5e4886;
+            color: rgb(124, 134, 63);
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 5px;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #0ecece;
+            color: rgb(102, 49, 91);
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .contact-container {
+            max-width: 1080px;
+            margin: 5px auto;
+            padding: 20px;
+            background-color: #00baf2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .contact-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-container label {
+            margin-bottom: 8px;
+            display: block;
+            color: #555;
+        }
+        .contact-container input[type="text"],
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-container textarea {
+            height: 150px;
+            resize: none;
+        }
+        .contact-container input[type="submit"] {
+            background-color: #91b336;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .contact-container input[type="submit"]:hover {
+            background-color: #1fb476;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minakshi Kumari</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="intro">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi, I'm Minakshi Kumari, a web developer passionate about building creative and functional projects. Check out my work below.</p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-item">
+            <h3>TIP Calculator</h3>
+            <p>A tool to calculate tips based on the total bill.</p>
+            <a href="https://github.com/Minakshi-2000/my-work.git" class="btn">View Project</a>
+        </div>
+        <div class="project-item">
+            <h3>Paytm Landing Page</h3>
+            <p>A clone of the Paytm landing page using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/Minakshi-2000/workp.git" class="btn">View Project</a>
+        </div>
+        <div class="project-item">
+            <h3>Portfolio Website</h3>
+            <p>A portfolio website showcasing my projects and skills.</p>
+            <a href="https://github.com/Minakshi-2000/deno.git" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I’m a graduate in Electrical Engineering from Bihar Engineering University, Patna. I have a passion for web development and enjoy working on innovative projects.</p>
+        <h3>Skills:</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, C, SQL</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
+    
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+    
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here.." required></textarea>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Minakshi Kumari</p>
+    </footer>
+</body>
+</html>
